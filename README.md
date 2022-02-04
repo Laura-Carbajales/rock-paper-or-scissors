@@ -22,7 +22,7 @@
 
 ---
 
-## About The Project
+## ✨ About The Project
 
 [View the project](https://laura-carbajales.github.io/rock-paper-or-scissors/)
 
@@ -32,7 +32,7 @@ You can try it as many times as you want!
 
 ---
 
-## Getting Started
+## 🎬 Getting Started
 
 To start this project you need to follow this steps:
 
@@ -61,7 +61,7 @@ To start this project you need to follow this steps:
 
 ---
 
-## Tech Stack
+## 🖥️ Tech Stack
 
 - HTML5
 - SCSS
@@ -69,6 +69,8 @@ To start this project you need to follow this steps:
 
 ---
 
-## Contact
+## 📧 Contact
 
 [![Autor](https://img.shields.io/badge/github-Laura%20Carbajales-pink?style=for-the-badge&logo=github)](https://github.com/Laura-Carbajales)
+
+## 👩‍💻 Let´s go!
