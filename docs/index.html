@@ -3,18 +3,65 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Título</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Paper or Scissors</title>
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
 </head>
 
 <body>
   <div class="page">
-    
-    
-    
+    <main class='main'>
+        <div class="container">
+            <h1 class="container__title">Juego Piedra, Papel y Tijera</h1>
+            <form action="" class="container__controls">
+                <label class="container__controls--subtitle"
+                    for="element_selected">Introduce aquí tu
+                    jugada:</label>
+                <div class="container__controls--group">
+                    <select class="js-select input" name="element_selected"
+                        id="element_selected">
+                        <option value="choose" selected disabled>
+                            Selecciona tu jugada</option>
+                        <option value="stone">Piedra</option>
+                        <option value="paper">Papel</option>
+                        <option value="scissor">Tijera</option>
+                    </select>
+                    <input class="js-button button" type="submit" value="Jugar" />
+                    <input class="js-reset hidden buttonReset" type="submit"
+                        value="Reiniciar juego" />
+                </div>
+            </form>
+            <p class="js-result result">¡Vamos a jugar!</p>
+            <div class="container__counter">
+                <p class="js-userCounter container__counter--user">Jugador/a: 0</p>
+                <p class="js-computerCounter container__counter--computer">
+                    Computadora:
+                    0</p>
+            </div>
+            <div class='js-containerEmoji container__emoji'>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <small class="footer__copy">&copy; 2022 Laura Carbajales</small>
+        <section class="footer__rrss">
+            <h3 class="footer__rrss--title">See more about me on:</h3>
+            <a href="https://github.com/Laura-Carbajales"
+                class="footer__rrss--link"><i
+                    class="icon fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/lauracarbajales/"
+                class="footer__rrss--link"><i class="icon fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/Lau_1505" class="footer__rrss--link"><i
+                    class="icon fab fa-twitter-square"></i></a>
+        </section>
+
+    </footer>
   </div>
   <script src="./assets/js/main.js"></script>
 </body>
