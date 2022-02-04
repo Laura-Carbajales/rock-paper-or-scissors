@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.container {
+  height: 400px;
+  width: 600px;
+  border: 2px solid green;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: rgb(96, 95, 95);
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+  margin-bottom: 10px;
+}
+.group {
+  display: flex;
+  margin-bottom: 20px;
+}
+.input {
+  margin-right: 5px;
+  padding: 5px;
+  height: 40px;
+  border: 2px solid rgb(208, 205, 205);
+  color: rgb(101, 101, 101);
+  font-size: 14px;
+  text-align: center;
+}
+.button {
+  margin-left: 5px;
+  background-color: rgb(18, 201, 161);
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  width: 80px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.button:hover {
+  border: 2px solid rgb(18, 201, 161);
+  background-color: white;
+  color: rgb(18, 201, 161);
+}
+.buttonReset {
+  margin-left: 5px;
+  background-color: rgb(18, 201, 161);
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  width: 120px;
+  border: 2px solid rgb(18, 201, 161);
+  border-radius: 5px;
+}
+.buttonReset:hover {
+  border: 2px solid rgb(18, 201, 161);
+  background-color: white;
+  color: rgb(18, 201, 161);
+}
+.result {
+  background-color: rgb(18, 201, 161);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.counter {
+  color: grey;
+}
+.hidden {
+  display: none;
+}
