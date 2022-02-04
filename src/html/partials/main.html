@@ -1,23 +1,29 @@
-<main class="container">
-    <h1 class="title">Juego Piedra, Papel y Tijera</h1>
-    <form action="" class="controls">
-        <label class="subtitle" for="element_selected">Introduce aquí tu
-            jugada:</label>
-        <div class="group">
-            <select class="js-select input" name="element_selected"
-                id="element_selected">
-                <option value="choose" selected disabled>
-                    Selecciona tu jugada</option>
-                <option value="stone">Piedra</option>
-                <option value="paper">Papel</option>
-                <option value="scissor">Tijera</option>
-            </select>
-            <input class="js-button button" type="submit" value="Jugar" />
-            <input class="js-reset hidden buttonReset" type="submit"
-                value="Reiniciar juego" />
+<main class='main'>
+    <div class="container">
+        <h1 class="container__title">Juego Piedra, Papel y Tijera</h1>
+        <form action="" class="container__controls">
+            <label class="container__controls--subtitle"
+                for="element_selected">Introduce aquí tu
+                jugada:</label>
+            <div class="container__controls--group">
+                <select class="js-select input" name="element_selected"
+                    id="element_selected">
+                    <option value="choose" selected disabled>
+                        Selecciona tu jugada</option>
+                    <option value="stone">Piedra</option>
+                    <option value="paper">Papel</option>
+                    <option value="scissor">Tijera</option>
+                </select>
+                <input class="js-button button" type="submit" value="Jugar" />
+                <input class="js-reset hidden buttonReset" type="submit"
+                    value="Reiniciar juego" />
+            </div>
+        </form>
+        <div class="container__counter">
+            <p class="js-userCounter container__counter--user">Jugador: 0</p>
+            <p class="js-computerCounter container__counter--computer">
+                Computadora:
+                0</p>
         </div>
-    </form>
-    <p class="js-result result">¡Vamos a jugar!</p>
-    <p class="js-userCounter counter">Jugador: 0</p>
-    <p class="js-computerCounter counter">Computadora: 0</p>
+    </div>
 </main>
