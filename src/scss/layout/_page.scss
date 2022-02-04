@@ -87,6 +87,7 @@
     }
     &__counter {
       display: flex;
+      margin-top: 20px;
       &--user {
         padding-right: 20px;
         margin-right: 2px;
@@ -114,10 +115,10 @@
 }
 
 .result {
-  background-color: rgb(18, 201, 161);
   padding: 10px;
+  border: 2px solid rgb(18, 201, 161);
   border-radius: 5px;
-  color: white;
+  color: rgb(18, 201, 161);
   font-weight: bold;
 }
 
