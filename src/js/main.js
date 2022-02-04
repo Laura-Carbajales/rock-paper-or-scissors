@@ -13,6 +13,8 @@ const userCounter = document.querySelector('.js-userCounter');
 const computerCounter = document.querySelector('.js-computerCounter');
 //Boton de reset
 const resetButton = document.querySelector('.js-reset');
+//Emojis
+const emojisContainer = document.querySelector('.js-containerEmoji');
 //Variables para los contadores
 let totalCounter = 0;
 let countUserResult = 0;
@@ -80,6 +82,32 @@ function renderTextResult(userResult) {
     textResult.innerHTML = 'Empate';
   }
 }
+//Función para dibujar los emojis
+const renderEmoji = (userElement, computerElement) => {
+  let imgUser = '';
+  let imgComputer = '';
+  if (userElement === 'stone') {
+    imgUser = './assets/images/rock.png';
+  } else if (userElement === 'paper') {
+    imgUser = './assets/images/paper.png';
+  } else if (userElement === 'scissor') {
+    imgUser = './assets/images/scissors.png';
+  }
+  if (computerElement === 'stone') {
+    imgComputer = './assets/images/rock.png';
+  } else if (computerElement === 'paper') {
+    imgComputer = './assets/images/paper.png';
+  } else if (computerElement === 'scissor') {
+    imgComputer = './assets/images/scissors.png';
+  }
+  console.log(computerElement);
+  const htmlImage = `
+  <img class=' container__emoji--item' src='${imgUser}' alt='user emoji' title='user emoji' /> 
+  <img class='container__emoji--item'
+  src='${imgComputer}' alt='computer emoji'
+  title='computer emoji' />`;
+  emojisContainer.innerHTML = htmlImage;
+};
 //Función contador
 function updateCounter(userResult) {
   if (userResult === 'win') {
@@ -105,6 +133,7 @@ function handleClickPlay(event) {
     return;
   }
   const computerElement = getComputerElement();
+  renderEmoji(userElement, computerElement);
   const result = getUserResult(userElement, computerElement);
   renderTextResult(result);
   updateCounter(result);
